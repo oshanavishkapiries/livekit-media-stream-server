@@ -1,0 +1,17 @@
+{
+  "name": "hitha-poc",
+  "private": true,
+  "description": "LiveKit video and voice calling POC for Hitha",
+  "scripts": {
+    "backend": "npm run dev --workspace=backend",
+    "frontend": "npm run dev --workspace=frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
