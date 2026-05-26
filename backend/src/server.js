@@ -21,7 +21,7 @@ app.get("/health", (_req, res) => {
   });
 });
 
-app.post("/livekit/token", (req, res) => {
+app.post("/livekit/token", async (req, res) => {
   const { roomName, participantName, participantRole } = req.body;
 
   if (!roomName) {
@@ -44,7 +44,7 @@ app.post("/livekit/token", (req, res) => {
       canPublishData: true,
     });
 
-    const jwt = token.toJwt();
+    const jwt = await token.toJwt();
 
     res.json({
       accessToken: jwt,
