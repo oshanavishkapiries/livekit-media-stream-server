@@ -18,6 +18,7 @@ touch .gitignore README.md
 
 - `livekit-server/docker-compose.yml`
 - `livekit-server/livekit.yaml`
+- `livekit-server/.env.example`
 
 ## Copy To VPS 1
 
