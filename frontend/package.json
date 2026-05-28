@@ -1,0 +1,23 @@
+{
+  "name": "telehealth-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vite React client for the telehealth LiveKit proof of concept.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@livekit/components-react": "^2.8.1",
+    "@livekit/components-styles": "^1.1.8",
+    "livekit-client": "^2.15.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.11"
+  }
+}
